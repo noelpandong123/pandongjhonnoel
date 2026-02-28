@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pandong Jhon Noel T. — IT Student & Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" id="siteNav">
+    <div class="container">
+      <a class="navbar-brand site-logo" href="#home">JN</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav gap-lg-4 gap-2 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-blob"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center hero-row">
+        
+        <div class="col-lg-6 hero-left">
+          <p class="hero-greeting fade-up">Hi, I'm</p>
+          <h1 class="hero-name fade-up">Jhon Noel </h1>
+          <h2 class="hero-role fade-up">IT Student &amp; Developer</h2>
+          <p class="hero-bio fade-up">
+            A 4th-year Bachelor of Science in Information Technology student at Samar State University. Skilled in web and mobile application development, UI/UX design, and programming.
+          </p>
+          <div class="hero-actions d-flex flex-wrap gap-3 fade-up">
+            <a href="#works" class="btn-primary-custom">View Projects</a>
+            <a href="#contact" class="btn-outline-custom">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 offset-lg-1 text-center fade-up">
+          <div class="hero-img-wrap">
+            <img src="images/leon1.png" alt="Pandong Jhon Noel" class="hero-img"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+            <div class="hero-img-placeholder">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Add profile.jpg</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <a href="#works" class="scroll-down">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- ═══ PROJECTS CAROUSEL — 10 slides ═══ -->
+  <section id="works" class="section-pad">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-md-8">
+          <p class="section-eye fade-up">Portfolio</p>
+          <h3 class="section-title fade-up">Projects</h3>
+        </div>
+        <div class="col-md-4 text-md-end fade-up">
+          <div class="d-inline-flex align-items-center gap-3">
+            <span class="carousel-counter" id="projectsCounter">1 / 10</span>
+            <div class="d-flex gap-2">
+              <button class="carousel-btn" id="projectsPrev">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="carousel-btn" id="projectsNext">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="csl-viewport fade-up">
+        <div class="csl-track" id="projectsTrack">
+
+          <!-- Slide 1 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm1.png" alt="Website Design" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project1.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title"> Emergency Alert using Lora32</h4><p class="po-year">FLUTTER/DART· 2025</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm2.png" alt="Flutter App" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project2.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Web Development</span><h4 class="po-title">Health Management System</h4><p class="po-year">PHP, HTML, JS, CSS · 2025</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm3.png" alt="Web Development" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project3.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Web Development</span><h4 class="po-title">Tahong Marketplace &amp; PHP, CSS, JS, HTML</h4><p class="po-year">Figma · 2025</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm4.png" alt="Mobile Development" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project4.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">Pahimakas</h4><p class="po-year">Flutter/Dart  · 2025</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm6.png" alt="Mobile Development" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project5.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">Sweet Majesty</h4><p class="po-year">Flutter/Dart · 2024</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm7.png" alt="Mobile Development" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project6.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">Anamix</h4><p class="po-year">Flutter/Dart · 2024</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm8.png" alt="Bus Booking" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project7.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">Bus Booking </h4><p class="po-year">Flutter/Dart · 2024</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 8 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm9.png" alt="Mobile Development" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project8.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">AwareSafe</h4><p class="po-year">Flutter/Dart · 2023</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 9 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm11.png" alt="Mobile Development" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project9.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">GroceryGo</h4><p class="po-year">Flutter/Dart · 2023</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 10 -->
+          <div class="csl-slide">
+            <div class="project-card">
+              <div class="project-thumb">
+                <img src="images/projectm12.png" alt="Robotics" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="thumb-fallback"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>project10.jpg</span></div>
+                <div class="project-overlay">
+                  <div class="po-content"><span class="po-tag">Mobile Development</span><h4 class="po-title">Serenova</h4><p class="po-year">Flutter/Dart· 2023</p></div>
+                  <div class="po-btn">↗</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /csl-track -->
+      </div><!-- /csl-viewport -->
+      <div class="csl-dots" id="projectsDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE CAROUSEL — 10 slides ═══ -->
+  <section id="experience" class="section-pad section-dark">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-md-8">
+          <p class="section-eye section-eye--light fade-up">Career</p>
+          <h3 class="section-title section-title--light fade-up">Experience</h3>
+        </div>
+        <div class="col-md-4 text-md-end fade-up">
+          <div class="d-inline-flex align-items-center gap-3">
+            <span class="carousel-counter carousel-counter--light" id="expCounter">1 / 10</span>
+            <div class="d-flex gap-2">
+              <button class="carousel-btn carousel-btn--light" id="expPrev">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <button class="carousel-btn carousel-btn--light" id="expNext">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="csl-viewport fade-up">
+        <div class="csl-track" id="expTrack">
+
+          <!-- Exp 1 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience1.jpg" alt="Logo Contest" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp1.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Champion — Logo Design Contest</h4>
+                  <span class="exp-badge">2025</span>
+                </div>
+                <p class="exp-co">GAD-Driven IT Bootcamp · Canva Logo Design Contest</p>
+                <p class="exp-desc">Won Champion at the GAD-Driven IT Bootcamp 2025 Canva Logo Design Contest, demonstrating strong graphic design skills and creative visual communication under competition pressure.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 2 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience2.jpg" alt="Volunteer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp2.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Igniting Volunteer</h4>
+                  <span class="exp-badge">2024</span>
+                </div>
+                <p class="exp-co">Bulonterismo Tungo sa Bagong Pilipinas</p>
+                <p class="exp-desc">Led innovation initiatives for deep economic and social transformation, contributing to community development programs and civic engagement activities at the local level.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 3 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience3.jpg" alt="Thesis Facilitator" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp3.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Facilitator — AI-Driven Thesis Workshop</h4>
+                  <span class="exp-badge">2024</span>
+                </div>
+                <p class="exp-co">AI-Driven Thesis Publication Workshop · Samar State University</p>
+                <p class="exp-desc">Served as facilitator guiding participants through AI-assisted academic writing and publication processes, ensuring effective learning outcomes across all workshop modules.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 4 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience4.jpg" alt="DICT Canva" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp4.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Trainee — Graphic Design Using Canva</h4>
+                  <span class="exp-badge">2024</span>
+                </div>
+                <p class="exp-co">DICT Samar · Technical Training</p>
+                <p class="exp-desc">Completed DICT Samar's official training on Graphic Design Using Canva, developing foundational and intermediate design skills including layout, typography, and visual branding.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 5 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience5.jpg" alt="Minecraft Education" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp5.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Trainee — Minecraft Education</h4>
+                  <span class="exp-badge">2024</span>
+                </div>
+                <p class="exp-co">DICT Samar · Technical Training</p>
+                <p class="exp-desc">Attended DICT Samar's technical training on Minecraft Education, exploring game-based learning strategies and educational technology integration for classroom environments.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 6 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience6.jpg" alt="Mobile Robotics" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp6.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Participant — Mobile Robotics</h4>
+                  <span class="exp-badge">2023</span>
+                </div>
+                <p class="exp-co">Mobile Robotics Training Program</p>
+                <p class="exp-desc">Participated in a mobile robotics training program, gaining hands-on experience in building and programming robotic units, enhancing technical problem-solving and engineering thinking.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 7 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience7.jpg" alt="Web Dev Seminar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp7.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role"> Web Development for the Digital Age</h4>
+                  <span class="exp-badge">2023</span>
+                </div>
+                <p class="exp-co">Designing Functional and Engaging Websites Seminar</p>
+                <p class="exp-desc">Attended a professional seminar on web development for the digital age, covering best practices for designing accessible, functional, and engaging websites for modern users.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 8 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience8.jpg" alt="Patent Drafting" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp8.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Attendee — Intellectual Property Seminar</h4>
+                  <span class="exp-badge">2023</span>
+                </div>
+                <p class="exp-co">Navigating IP for Academic Innovators · Patent Drafting &amp; Search</p>
+                <p class="exp-desc">Participated in a seminar on intellectual property rights for academic innovators, covering patent drafting procedures, IP search tools, and protecting innovations in an academic setting.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 9 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience9.png" alt="Student Leader" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp9.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Student Leader &amp; Event Coordinator</h4>
+                  <span class="exp-badge">2023</span>
+                </div>
+                <p class="exp-co">Samar State University — IT Department</p>
+                <p class="exp-desc">Served as a student leader within the IT Department, coordinating academic events, organizing study groups, and facilitating peer-to-peer learning activities for fellow students.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 10 -->
+          <div class="csl-slide csl-slide--exp">
+            <div class="exp-card">
+              <div class="exp-card-img">
+                <img src="images/experience10.png" alt="Freelance Design" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                <div class="exp-img-fb"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg><span>exp10.jpg</span></div>
+              </div>
+              <div class="exp-card-body">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                  <h4 class="exp-role">Freelance Graphic Designer</h4>
+                  <span class="exp-badge">2022 – Present</span>
+                </div>
+                <p class="exp-co">Independent · Canva &amp; Adobe Photoshop</p>
+                <p class="exp-desc">Provides freelance graphic design services including social media content, event posters, logo concepts, and digital branding materials for local clients and organizations.</p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /csl-track -->
+      </div><!-- /csl-viewport -->
+      <div class="csl-dots csl-dots--light" id="expDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+      <p class="section-eye fade-up">What I Do</p>
+      <h3 class="section-title mb-5 fade-up">Skills</h3>
+      <div class="row g-4">
+
+        <div class="col-sm-6 col-lg-4 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <h5 class="skill-name">Web Development</h5>
+            <p class="skill-desc">HTML, CSS, JavaScript, PHP — building functional and engaging websites.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 fade-up delay-1">
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+            <h5 class="skill-name">Mobile Development</h5>
+            <p class="skill-desc">Flutter &amp; Dart — cross-platform mobile application development.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 fade-up delay-2">
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h5 class="skill-name">UI/UX Design</h5>
+            <p class="skill-desc">Figma — designing clean, intuitive user interfaces and prototypes.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 fade-up">
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><line x1="2" y1="12" x2="22" y2="12"/></svg></div>
+            <h5 class="skill-name">Layout / Graphic Design</h5>
+            <p class="skill-desc">Canva &amp; Adobe Photoshop — layout design, branding, and visual assets.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 fade-up delay-1">
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h5 class="skill-name">Networking</h5>
+            <p class="skill-desc">Computer networking fundamentals, troubleshooting, and configuration.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 fade-up delay-2">
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M22 10H2"/></svg></div>
+            <h5 class="skill-name">Technical Support</h5>
+            <p class="skill-desc">Basic hardware &amp; software troubleshooting and IT support.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION ═══ -->
+  <section id="education" class="section-pad section-dark">
+    <div class="container">
+      <p class="section-eye section-eye--light fade-up">Background</p>
+      <h3 class="section-title section-title--light mb-5 fade-up">Education &amp; References</h3>
+      <div class="row g-4">
+
+        <div class="col-md-6 fade-up">
+          <div class="edu-card">
+            <span class="edu-num">01</span>
+            <span class="edu-years">2022 – Present</span>
+            <h4 class="edu-degree">Bachelor of Science in Information Technology</h4>
+            <p class="edu-school">Samar State University</p>
+            <p class="edu-field">4th Year Student · Web &amp; Mobile Development</p>
+            <div class="edu-line"></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 fade-up delay-1">
+          <div class="edu-card">
+            <span class="edu-num">02</span>
+            <span class="edu-years">References</span>
+            <h4 class="edu-degree">Erickson L. Niego</h4>
+            <p class="edu-school">Samar State University — IT Faculty</p>
+            <p class="edu-field">0917-120-9029</p>
+            <div style="margin-top:1.2rem">
+              <h4 class="edu-degree">Aldrin James Ferrer</h4>
+              <p class="edu-school">Nursing Attendant</p>
+              <p class="edu-field">0906-361-4563</p>
+            </div>
+            <div class="edu-line"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="contact-card fade-up">
+            <div class="row g-0">
+
+              <div class="col-md-4 contact-photo-col">
+                <div class="contact-img-wrap">
+                  <img src="images/leon1.png" alt="Pandong Jhon Noel"
+                       onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+                  <div class="contact-img-fallback">JN</div>
+                </div>
+                <p class="ci-name">Pandong Jhon Noel T.</p>
+                <p class="ci-title">BSIT · Samar State University</p>
+                <div class="ci-langs">
+                  <span class="ci-lang-badge">Filipino — Native/Fluent</span>
+                  <span class="ci-lang-badge">English — Basic</span>
+                </div>
+              </div>
+
+              <div class="col-md-8 contact-info-col">
+                <p class="section-eye mb-1">Get In Touch</p>
+                <h3 class="contact-heading">Contact</h3>
+                <p class="contact-sub">Feel free to reach out through any channel. I usually respond within 1–2 days.</p>
+                <div class="row g-3 mt-2">
+                  <div class="col-sm-6">
+                    <div class="cf-block">
+                      <p class="cf-label">Email</p>
+                      <a href="mailto:pandongjhonnoel@gmail.com" class="cf-val cf-val--link">pandongjhonnoel@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="cf-block">
+                      <p class="cf-label">Phone</p>
+                      <p class="cf-val">09684942201</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="cf-block">
+                      <p class="cf-label">Location</p>
+                      <p class="cf-val">Brgy. Guindapunan P2, Catbalogan City, Samar, Philippines</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="cf-block">
+                      <p class="cf-label">Civil Status</p>
+                      <p class="cf-val">Single · Filipino · Roman Catholic</p>
+                    </div>
+                  </div>
+                </div>
+                <a href="" download class="btn-primary-custom mt-4 d-inline-flex align-items-center gap-2">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download Resume
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <span class="footer-copy">© 2025 Pandong Jhon Noel T. All rights reserved.</span>
+      <div class="d-flex gap-4">
+       
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
